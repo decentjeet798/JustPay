@@ -3,17 +3,27 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:payes/generated/l10n.dart';
 import 'package:payes/routes/page_routes.dart';
 import 'package:payes/theme/style.dart';
+import 'package:payes/.env.dart';
+import 'package:payes/components/dismiss_focus_overlay.dart';
+
 
 import 'auth/login_navigator.dart';
 import 'language_cubit.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
+
+  // set the publishable key for Stripe - this is mandatory
+  Stripe.publishableKey = stripePublishableKey;
+  Stripe.merchantIdentifier = 'merchant.flutter.stripe.test';
+  Stripe.urlScheme = 'flutterstripe';
+  await Stripe.instance.applySettings();
 
   runApp(MultiBlocProvider(providers: [
     BlocProvider<LanguageCubit>(
@@ -29,7 +39,8 @@ class MyApp extends StatelessWidget {
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return BlocBuilder<LanguageCubit, Locale>(
       builder: (context, locale) {
-        return MaterialApp(
+        return DismissFocusOverlay(
+          child: MaterialApp(
           localizationsDelegates: [
             S.delegate,
             GlobalMaterialLocalizations.delegate,
@@ -42,6 +53,7 @@ class MyApp extends StatelessWidget {
           home: LoginNavigator(),
           routes: PageRoutes().routes(),
           debugShowCheckedModeBanner: false,
+        ),
         );
       },
     );

@@ -1,12 +1,12 @@
 name: payes
-description: A new Flutter application.
+description: JustPay with Stripe.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.1+2
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.12.0 <3.1.0'
 
 dependencies:
   flutter:
@@ -14,19 +14,20 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
-  cupertino_icons: ^1.0.3
-  flutter_phoenix: ^1.0.0
-  animation_wrappers: 0.0.4
-  shared_preferences: ^2.0.5
-  flutter_bloc: ^7.0.0
-  dotted_border: ^2.0.0
-  carousel_slider: ^4.0.0-nullsafety.0
-  google_mobile_ads: ^0.13.2
-  solid_bottom_sheet: ^0.1.10
+  cupertino_icons:
+  flutter_phoenix:
+  animation_wrappers:
+  shared_preferences:
+  flutter_bloc:
+  dotted_border:
+  carousel_slider:
+  google_mobile_ads:
+  solid_bottom_sheet:
+  flutter_stripe:
 
 
 dependency_overrides:
-  platform: ^3.1.0
+  platform: ^3.0.0
 
 dev_dependencies:
   flutter_test:
