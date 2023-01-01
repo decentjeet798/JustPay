@@ -5,7 +5,8 @@
         android:label="payes"
         android:icon="@mipmap/launcher_icon">
         <activity
-            android:name="androidx.multidex.MultiDexApplication"
+            android:name=".MainActivity"
+            android:exported="false"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
