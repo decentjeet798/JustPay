@@ -43,7 +43,7 @@ android {
         applicationId "com.flutter.payes"
         minSdkVersion 29
         targetSdkVersion 33
-        multiDexEnabled = true
+        // multiDexEnabled = true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -70,5 +70,5 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation("androidx.multidex:multidex:2.0.1")
+    // implementation("androidx.multidex:multidex:2.0.1")
 }
