@@ -1,4 +1,4 @@
-package com.flutter.payes
+package org.zisuz.justpay
 
 import io.flutter.embedding.android.FlutterActivity
 

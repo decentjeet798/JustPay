@@ -1,6 +1,6 @@
 class AppConfig {
   static final String appName = 'Payes';
-  static final String packageName = 'com.flutter.payes';
+  static final String packageName = 'org.zisuz.justpay';
   static final String languageDefault = "en";
   static final Map<String, String> languagesSupported = {
     'en': "English",
