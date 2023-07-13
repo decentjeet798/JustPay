@@ -25,7 +25,7 @@ class _SettingsState extends State<Settings> {
             style: Theme.of(context).appBarTheme.textTheme!.bodyText1),
       ),
       body: FadedSlideAnimation(
-        Stack(
+        child: Stack(
           children: [
             ListView(
               children: [

@@ -1,14 +1,13 @@
 import 'dart:io';
 
-import 'package:animation_wrappers/Animations/faded_slide_animation.dart';
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/routes/page_routes.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/routes/page_routes.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class Recent {
   String image;
@@ -110,7 +109,7 @@ class _HomeUIState extends State<HomeUI> {
           backgroundColor: Theme.of(context).backgroundColor,
           body: SafeArea(
             child: FadedSlideAnimation(
-              SingleChildScrollView(
+              child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -120,7 +119,7 @@ class _HomeUIState extends State<HomeUI> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 18.0),
                       child: FadedScaleAnimation(
-                        Image.asset(
+                        child: Image.asset(
                           Assets.logo2,
                           scale: 3,
                         ),
@@ -154,7 +153,7 @@ class _HomeUIState extends State<HomeUI> {
                           ])),
                           Spacer(),
                           FadedScaleAnimation(
-                            Image.asset(
+                            child: Image.asset(
                               Assets.homeImg,
                               scale: 3,
                             ),
@@ -242,7 +241,7 @@ class _HomeUIState extends State<HomeUI> {
                                       children: [
                                         index == recentTransactions.length
                                             ? FadedScaleAnimation(
-                                                CircleAvatar(
+                                          child: CircleAvatar(
                                                   backgroundColor:
                                                       Theme.of(context)
                                                           .primaryColor,
@@ -254,7 +253,7 @@ class _HomeUIState extends State<HomeUI> {
                                                 ),
                                               )
                                             : FadedScaleAnimation(
-                                                CircleAvatar(
+                                          child: CircleAvatar(
                                                   backgroundImage: AssetImage(
                                                       recentTransactions[index]
                                                           .image),
@@ -341,7 +340,7 @@ class _HomeUIState extends State<HomeUI> {
                                           child: Row(
                                             children: [
                                               FadedScaleAnimation(
-                                                Image.asset(
+                                                child: Image.asset(
                                                   rechargeNBill[index].image,
                                                   height: 14,
                                                 ),
@@ -377,7 +376,7 @@ class _HomeUIState extends State<HomeUI> {
                                       context, PageRoutes.scanPage);
                                 },
                                 child: FadedScaleAnimation(
-                                  Image.asset(
+                                  child: Image.asset(
                                     Assets.pay1,
                                     scale: 2.8,
                                   ),
@@ -390,7 +389,7 @@ class _HomeUIState extends State<HomeUI> {
                                       context, PageRoutes.selectRecipient);
                                 },
                                 child: FadedScaleAnimation(
-                                  Image.asset(
+                                  child: Image.asset(
                                     Assets.pay2,
                                     scale: 2.8,
                                   ),
@@ -403,7 +402,7 @@ class _HomeUIState extends State<HomeUI> {
                                       context, PageRoutes.mobileRecharge);
                                 },
                                 child: FadedScaleAnimation(
-                                  Image.asset(
+                                  child: Image.asset(
                                     Assets.pay3,
                                     scale: 2.8,
                                   ),

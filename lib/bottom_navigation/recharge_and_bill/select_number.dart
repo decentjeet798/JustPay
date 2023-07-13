@@ -1,10 +1,10 @@
 import 'package:animation_wrappers/Animations/faded_scale_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/bottom_navigation/home/home_ui.dart';
-import 'package:payes/components/entry_field.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/routes/page_routes.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/bottom_navigation/home/home_ui.dart';
+import 'package:YaPay/components/entry_field.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/routes/page_routes.dart';
 
 class SelectNumber extends StatelessWidget {
   const SelectNumber({Key? key}) : super(key: key);
@@ -78,7 +78,7 @@ class SelectNumber extends StatelessWidget {
                             return Column(
                               children: [
                                 FadedScaleAnimation(
-                                  CircleAvatar(
+                                  child: CircleAvatar(
                                     backgroundImage: AssetImage(
                                         recentTransactions[index].image),
                                   ),

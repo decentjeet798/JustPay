@@ -4,11 +4,11 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/components/auth_entry_field.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/components/auth_entry_field.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/theme/colors.dart';
 import 'package:solid_bottom_sheet/solid_bottom_sheet.dart';
 
 class Transaction {
@@ -102,7 +102,7 @@ class _WalletState extends State<Wallet> {
             Row(
               children: [
                 Text(
-                  'Ranjeet Kumar',
+                  'John Appleseed',
                   style: Theme.of(context).textTheme.bodyText2!.copyWith(
                       color: Theme.of(context).scaffoldBackgroundColor,
                       fontSize: 11),
@@ -282,7 +282,7 @@ class _WalletState extends State<Wallet> {
                           height: 20,
                         ),
                         AuthEntryField(S.of(context).account_holder_name,
-                            TextEditingController(text: 'Ranjeet Kumar')),
+                            TextEditingController(text: 'John Appleseed')),
                         SizedBox(
                           height: 40,
                         ),
@@ -399,7 +399,7 @@ class _WalletState extends State<Wallet> {
             tileColor: Theme.of(context).scaffoldBackgroundColor,
             dense: true,
             leading: FadedScaleAnimation(
-              Image.asset(
+              child: Image.asset(
                 transactions[index].image,
                 height: 38,
               ),

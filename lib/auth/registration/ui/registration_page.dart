@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payes/auth/login_navigator.dart';
+import 'package:YaPay/auth/login_navigator.dart';
 import 'registration_interactor.dart';
 import 'registration_ui.dart';
 

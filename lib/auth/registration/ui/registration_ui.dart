@@ -1,11 +1,11 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/config/app_config.dart';
-import 'package:payes/generated/l10n.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/config/app_config.dart';
+import 'package:YaPay/generated/l10n.dart';
 import 'registration_interactor.dart';
-import 'package:payes/components/auth_entry_field.dart';
+import 'package:YaPay/components/auth_entry_field.dart';
 
 class RegistrationUI extends StatefulWidget {
   final RegistrationInteractor registrationInteractor;
@@ -18,11 +18,11 @@ class RegistrationUI extends StatefulWidget {
 
 class _RegistrationUIState extends State<RegistrationUI> {
   final TextEditingController _nameController =
-      TextEditingController(text: 'Ranjeet Kumar');
+      TextEditingController(text: 'John Appleseed');
   final TextEditingController _emailController =
-      TextEditingController(text: 'ranjeet@cpaypayments.com');
+      TextEditingController(text: 'info@yapay.com');
   final TextEditingController _phoneController =
-      TextEditingController(text: '+91 9206172077');
+      TextEditingController(text: '+1 307 466-0198');
 
   @override
   void dispose() {
@@ -37,7 +37,7 @@ class _RegistrationUIState extends State<RegistrationUI> {
     return Scaffold(
       appBar: AppBar(),
       body: FadedSlideAnimation(
-        Padding(
+        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 18.0),
           child: Stack(
             children: [
@@ -68,19 +68,19 @@ class _RegistrationUIState extends State<RegistrationUI> {
                         height: 40,
                       ),
                       AuthEntryField(S.of(context).name,
-                          TextEditingController(text: 'Ranjeet Kumar')),
+                          TextEditingController(text: 'John Appleseed')),
                       SizedBox(
                         height: 20,
                       ),
                       AuthEntryField(
                           S.of(context).email,
                           TextEditingController(
-                              text: 'ranjeet@cpaypayments.com')),
+                              text: 'info@yapay.com')),
                       SizedBox(
                         height: 20,
                       ),
                       AuthEntryField(S.of(context).phone,
-                          TextEditingController(text: '+91 9206172077')),
+                          TextEditingController(text: '+1 307 466-0198')),
                       SizedBox(
                         height: 200,
                       ),

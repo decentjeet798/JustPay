@@ -1,9 +1,9 @@
 import 'package:animation_wrappers/Animations/faded_scale_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class MyQrCode extends StatelessWidget {
   const MyQrCode({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class MyQrCode extends StatelessWidget {
                             scale: 3,
                           ),
                           FadedScaleAnimation(
-                             CircleAvatar(
+                            child: CircleAvatar(
                               radius: 32,
                               backgroundColor: CustomColor.blackColor,
                               child: Image.asset(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:payes/auth/login_navigator.dart';
-import 'package:payes/auth/verification/ui/verifcation_interactor.dart';
-import 'package:payes/auth/verification/ui/verification_ui.dart';
+import 'package:YaPay/auth/login_navigator.dart';
+import 'package:YaPay/auth/verification/ui/verifcation_interactor.dart';
+import 'package:YaPay/auth/verification/ui/verification_ui.dart';
 
 class VerificationPage extends StatefulWidget {
   final String? phoneNumber;

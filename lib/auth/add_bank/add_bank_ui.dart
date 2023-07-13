@@ -1,9 +1,9 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/auth/add_bank/add_bank_interactor.dart';
-import 'package:payes/components/auth_entry_field.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
+import 'package:YaPay/auth/add_bank/add_bank_interactor.dart';
+import 'package:YaPay/components/auth_entry_field.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
 
 class AddBankUI extends StatefulWidget {
   final String? phoneNumber;
@@ -17,11 +17,11 @@ class AddBankUI extends StatefulWidget {
 
 class _AddBankUIState extends State<AddBankUI> {
   final TextEditingController _nameController =
-      TextEditingController(text: 'Ranjeet Kumar');
+      TextEditingController(text: 'John Appleseed');
   final TextEditingController _emailController =
-      TextEditingController(text: 'ranjeet@cpaypayments.com');
+      TextEditingController(text: 'info@yapay.com');
   final TextEditingController _phoneController =
-      TextEditingController(text: '+91 9206172077');
+      TextEditingController(text: '+1 307 466-0198');
 
   @override
   void dispose() {
@@ -36,7 +36,7 @@ class _AddBankUIState extends State<AddBankUI> {
     return Scaffold(
       appBar: AppBar(),
       body: FadedSlideAnimation(
-        Padding(
+        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 18.0),
           child: Stack(
             children: [
@@ -79,7 +79,7 @@ class _AddBankUIState extends State<AddBankUI> {
                         height: 20,
                       ),
                       AuthEntryField(S.of(context).account_holder_name,
-                          TextEditingController(text: 'Ranjeet Kumar')),
+                          TextEditingController(text: 'John Appleseed')),
                       SizedBox(
                         height: 200,
                       ),

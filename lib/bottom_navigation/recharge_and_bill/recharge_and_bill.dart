@@ -1,11 +1,11 @@
 import 'package:animation_wrappers/Animations/faded_scale_animation.dart';
 import 'package:animation_wrappers/Animations/faded_slide_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/bottom_navigation/home/home_ui.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/routes/page_routes.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/bottom_navigation/home/home_ui.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/routes/page_routes.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class RechargeAndBill extends StatelessWidget {
   const RechargeAndBill({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class RechargeAndBill extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
       body: FadedSlideAnimation(
-        ListView(
+        child: ListView(
           children: [
             Padding(
               padding: EdgeInsetsDirectional.only(start: 16, top: 36, end: 8),
@@ -140,7 +140,7 @@ class RechargeAndBill extends StatelessWidget {
     return GestureDetector(
       onTap: onTap as void Function()?,
       child: FadedScaleAnimation(
-        Container(
+        child: Container(
           padding: EdgeInsetsDirectional.fromSTEB(12, 10, 24, 10),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),

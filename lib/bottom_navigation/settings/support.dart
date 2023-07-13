@@ -1,8 +1,8 @@
 import 'package:animation_wrappers/Animations/faded_slide_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/components/auth_entry_field.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
+import 'package:YaPay/components/auth_entry_field.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
 
 class Support extends StatelessWidget {
   const Support({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class Support extends StatelessWidget {
       body: Stack(
         children: [
           FadedSlideAnimation(
-            ListView(
+            child: ListView(
               children: [
                 SizedBox(
                   height: 28,
@@ -100,12 +100,12 @@ class Support extends StatelessWidget {
                         height: 20,
                       ),
                       AuthEntryField(S.of(context).name,
-                          TextEditingController(text: 'Ranjeet Kumar')),
+                          TextEditingController(text: 'John Appleseed')),
                       SizedBox(
                         height: 12,
                       ),
                       AuthEntryField(S.of(context).email,
-                          TextEditingController(text: 'ranjeet@cpaypayments.com')),
+                          TextEditingController(text: 'info@yapay.com')),
                       SizedBox(
                         height: 12,
                       ),

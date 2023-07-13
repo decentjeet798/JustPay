@@ -5,11 +5,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/routes/page_routes.dart';
-import 'package:payes/theme/style.dart';
-import 'package:payes/.env.dart';
-import 'package:payes/components/dismiss_focus_overlay.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/routes/page_routes.dart';
+import 'package:YaPay/theme/style.dart';
+import 'package:YaPay/.env.dart';
+import 'package:YaPay/components/dismiss_focus_overlay.dart';
 
 
 import 'auth/login_navigator.dart';

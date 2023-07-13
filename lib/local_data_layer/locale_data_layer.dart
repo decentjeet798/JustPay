@@ -1,4 +1,4 @@
-import 'package:payes/config/app_config.dart';
+import 'package:YaPay/config/app_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LocalDataLayer {

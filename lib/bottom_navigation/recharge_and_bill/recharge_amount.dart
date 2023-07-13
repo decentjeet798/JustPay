@@ -1,10 +1,10 @@
 import 'package:animation_wrappers/Animations/faded_scale_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/components/auth_entry_field.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/components/auth_entry_field.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class RechargeAmount extends StatelessWidget {
   const RechargeAmount({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class RechargeAmount extends StatelessWidget {
               ),
               ListTile(
                 leading: FadedScaleAnimation(
-                   CircleAvatar(
+                  child: CircleAvatar(
                       radius: 28, child: Image.asset(Assets.provider5)),
                 ),
                 title: Text(

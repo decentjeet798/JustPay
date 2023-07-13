@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class EntryField extends StatelessWidget {
   final String? hint;

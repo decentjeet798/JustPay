@@ -3,6 +3,7 @@ class Assets {
   static const String logo2 = 'assets/logo2.png';
   static const String signInImage = 'assets/img_signin.png';
   static const String indiaFlag = 'assets/ind.png';
+  static const String finlandFlag = 'assets/fin.png';
   static const String footer1Act = 'assets/footer/ic_home.png';
   static const String footer1InAct = 'assets/footer/ic_home_act.png';
   static const String footer2Act = 'assets/footer/ic_wallet.png';

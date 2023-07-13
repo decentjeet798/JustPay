@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/bottom_navigation/recharge_and_bill/recharge_and_bill.dart';
-import 'package:payes/bottom_navigation/settings/settings.dart';
-import 'package:payes/routes/page_routes.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/bottom_navigation/recharge_and_bill/recharge_and_bill.dart';
+import 'package:YaPay/bottom_navigation/settings/settings.dart';
+import 'package:YaPay/routes/page_routes.dart';
 import 'home/home_ui.dart';
 import 'wallet/wallet.dart';
 

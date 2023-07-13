@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payes/auth/add_bank/add_bank_interactor.dart';
-import 'package:payes/auth/add_bank/add_bank_ui.dart';
+import 'package:YaPay/auth/add_bank/add_bank_interactor.dart';
+import 'package:YaPay/auth/add_bank/add_bank_ui.dart';
 
 class AddBankPage extends StatefulWidget {
   final String? phoneNumber;

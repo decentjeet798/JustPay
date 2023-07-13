@@ -1,5 +1,5 @@
-name: payes
-description: JustPay with Stripe.
+name: YaPay
+description: Introducing Ya Pay - the white label payment app for businesses to offer a seamless payment experience to their customers.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -32,7 +32,7 @@ dependency_overrides:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_native_splash: ^1.1.8+4
+  flutter_native_splash: ^2.2.19
 #  flutter_launcher_name: ^0.0.1
 #  flutter_launcher_icons: ^0.8.1
 flutter_icons:
@@ -40,7 +40,7 @@ flutter_icons:
   ios: true
   image_path: "assets/app_icon.png"
 flutter_launcher_name:
-  name: "Payes"
+  name: "YaPay"
 
 flutter_native_splash:
 

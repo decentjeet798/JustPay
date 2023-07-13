@@ -1,6 +1,6 @@
 import 'package:animation_wrappers/Animations/faded_slide_animation.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/generated/l10n.dart';
+import 'package:YaPay/generated/l10n.dart';
 
 class Tnc extends StatelessWidget {
   const Tnc({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class Tnc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: FadedSlideAnimation(
-        ListView(
+        child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 18),
           children: [
             SizedBox(

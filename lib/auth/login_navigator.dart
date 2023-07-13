@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:payes/auth/add_bank/add_bank_page.dart';
-import 'package:payes/bottom_navigation/settings/select_language.dart';
-import 'package:payes/routes/page_routes.dart';
+import 'package:YaPay/auth/add_bank/add_bank_page.dart';
+import 'package:YaPay/bottom_navigation/settings/select_language.dart';
+import 'package:YaPay/routes/page_routes.dart';
 import 'verification/ui/verification_page.dart';
 import 'login/ui/login_page.dart';
 import 'registration/ui/registration_page.dart';

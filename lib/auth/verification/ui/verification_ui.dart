@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/auth/verification/ui/verifcation_interactor.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/auth/verification/ui/verifcation_interactor.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class VerificationUI extends StatefulWidget {
   final String? phoneNumber;
@@ -49,7 +49,7 @@ class _VerificationUIState extends State<VerificationUI> {
     final node = FocusScope.of(context);
     return Scaffold(
       body: FadedSlideAnimation(
-        Padding(
+        child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 18.0),
           child: Stack(
             children: [
@@ -64,7 +64,7 @@ class _VerificationUIState extends State<VerificationUI> {
                         flex: 2,
                       ),
                       FadedScaleAnimation(
-                         Image.asset(
+                         child: Image.asset(
                           Assets.signInImage,
                           scale: 3,
                         ),

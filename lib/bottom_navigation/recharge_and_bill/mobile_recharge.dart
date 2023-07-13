@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/components/auth_entry_field.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/routes/page_routes.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/components/auth_entry_field.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/routes/page_routes.dart';
 
 class MobileRecharge extends StatelessWidget {
   const MobileRecharge({Key? key}) : super(key: key);

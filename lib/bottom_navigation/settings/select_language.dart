@@ -1,11 +1,11 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:payes/auth/login_navigator.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/config/app_config.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/language_cubit.dart';
+import 'package:YaPay/auth/login_navigator.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/config/app_config.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/language_cubit.dart';
 
 class SelectLanguage extends StatefulWidget {
   final bool fromRoot;
@@ -28,7 +28,7 @@ class _SelectLanguageState extends State<SelectLanguage> {
                 Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 16)),
       ),
       body: FadedSlideAnimation(
-        Stack(
+        child: Stack(
           children: [
             ListView(
               children: [

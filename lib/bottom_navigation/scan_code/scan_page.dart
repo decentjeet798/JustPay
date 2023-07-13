@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/components/entry_field.dart';
-import 'package:payes/generated/l10n.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/components/entry_field.dart';
+import 'package:YaPay/generated/l10n.dart';
 
 class ScanPage extends StatefulWidget {
   @override

@@ -1,10 +1,10 @@
 import 'package:animation_wrappers/Animations/faded_scale_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/routes/page_routes.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/routes/page_routes.dart';
+import 'package:YaPay/theme/colors.dart';
 
 class Settings extends StatelessWidget {
   const Settings({Key? key}) : super(key: key);
@@ -34,19 +34,19 @@ class Settings extends StatelessWidget {
                   child: RichText(
                       text: TextSpan(children: [
                     TextSpan(
-                        text: 'Ranjeet Kumar' + '\n',
+                        text: 'John Appleseed' + '\n',
                         style: Theme.of(context)
                             .textTheme
                             .headline6!
                             .copyWith(height: 1.2)),
                     TextSpan(
-                        text: '+91 9206172077' + '\n',
+                        text: '+1 307 466-0198' + '\n',
                         style: Theme.of(context)
                             .textTheme
                             .caption!
                             .copyWith(height: 2.8)),
                     TextSpan(
-                        text: 'ranjeet@cpaypayments.com',
+                        text: 'info@yapay.com',
                         style: Theme.of(context)
                             .textTheme
                             .caption!
@@ -72,13 +72,13 @@ class Settings extends StatelessWidget {
                           alignment: Alignment.center,
                           children: [
                             FadedScaleAnimation(
-                              Image.asset(
+                              child: Image.asset(
                                 Assets.qrCode,
                                 scale: 3,
                               ),
                             ),
                             FadedScaleAnimation(
-                              CircleAvatar(
+                              child: CircleAvatar(
                                 radius: 32,
                                 backgroundColor: CustomColor.blackColor,
                                 child: Image.asset(
@@ -143,7 +143,7 @@ class Settings extends StatelessWidget {
                     // Padding(
                     //   padding: const EdgeInsets.all(8.0),
                     //   child: BuyThisApp.button(
-                    //       'payes', 'https://bit.ly/cc_flutter_payes',
+                    //       'YaPay', 'https://bit.ly/cc_flutter_YaPay',
                     //       color: Theme.of(context).primaryColor),
                     // ),
                     // BuyThisApp.developerRow(

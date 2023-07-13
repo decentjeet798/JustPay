@@ -2,11 +2,11 @@ import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:payes/assets/assets.dart';
-import 'package:payes/auth/login_navigator.dart';
-import 'package:payes/components/custom_button.dart';
-import 'package:payes/generated/l10n.dart';
-import 'package:payes/theme/colors.dart';
+import 'package:YaPay/assets/assets.dart';
+import 'package:YaPay/auth/login_navigator.dart';
+import 'package:YaPay/components/custom_button.dart';
+import 'package:YaPay/generated/l10n.dart';
+import 'package:YaPay/theme/colors.dart';
 import 'login_interactor.dart';
 
 class LoginUI extends StatefulWidget {
@@ -39,7 +39,7 @@ class _LoginUIState extends State<LoginUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: FadedSlideAnimation(
-        SingleChildScrollView(
+        child: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Container(
             height: MediaQuery.of(context).size.height,
@@ -51,7 +51,7 @@ class _LoginUIState extends State<LoginUI> {
                   flex: 4,
                 ),
                 FadedScaleAnimation(
-                  Image.asset(
+                  child: Image.asset(
                     Assets.signInImage,
                     scale: 3.2,
                   ),
@@ -95,7 +95,7 @@ class _LoginUIState extends State<LoginUI> {
                               width: 16,
                             ),
                             Image.asset(
-                              Assets.indiaFlag,
+                              Assets.finlandFlag,
                               height: 16,
                             ),
                             SizedBox(
@@ -113,7 +113,7 @@ class _LoginUIState extends State<LoginUI> {
                         ),
                         hintText: S.of(context).enter_your_number),
                     controller:
-                        TextEditingController(text: ' +91 9206172077'),
+                        TextEditingController(text: ' +1 307 466-0198'),
                     style: Theme.of(context).textTheme.bodyText1,
                   ),
                 ),
